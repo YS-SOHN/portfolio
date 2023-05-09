@@ -1,0 +1,11 @@
+[
+  {
+    "Nav" : ["프로필","스킬","포트폴리오"]
+  },
+  {
+    "Nav" : ["Profile","Skill"],
+    "MainTxt" : ["Hello... <br>FrontEnd Developer<br>David Sohn 입니다."],
+    "FontTxt" : ["S-CoreDream-3Light","BMJUA","Gangwon","MaplestoryOTFBold"]
+  }
+
+]
