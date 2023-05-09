@@ -1,4 +1,5 @@
 <template>
+  
   <div class="w-full px-[2%] sticky top-0 bg-white py-2.5 z-50">
     <div class="max-w-7xl mx-auto flex justify-between items-center">
 
@@ -18,6 +19,7 @@
         </div>
     </div>
   </div>
+  <!-- {{ langList }} -->
 </template>
 
 <script>
@@ -29,7 +31,10 @@
       }
     },
     props : {
-      langList:Object
+      langList:Object,
+    },
+    mounted(){
+      console.log(this.langList)
     }
   }
 </script>

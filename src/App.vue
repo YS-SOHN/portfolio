@@ -1,7 +1,7 @@
 <template>
   
-
-<NavMenu @MenuIndex="MenuIndex = $event;" @click="SectionMove()" @dark="event => toggleDark()" @lang="lang=$event" :langList="langList[lang]" />
+{{ lang }}
+<NavMenu @MenuIndex="MenuIndex = $event;" @click="SectionMove()" :langList="langList[0]" />
   
 
   <div ref="메인페이지">
