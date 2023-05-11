@@ -1,4 +1,5 @@
 <template>
+  portfolio-Page
   <!-- <div class="bg-yellow-500 h-[970px]">portfolio
     </div> -->
   

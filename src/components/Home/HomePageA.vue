@@ -1,12 +1,12 @@
 <template>
   <div>
-    <swiper :scrollbar="{hide: true,}" :modules="Modules" class="mySwiper" :autoplay="true && {delay:2500}" :loop="true" :navigation="{prevEl: '.swiper-button-prev',nextEl:'.swiper-button-next'}" :pagination="{type:'fraction'}" @slideChange="onSlideChange">
+    <swiper :scrollbar="{hide: true,}" :modules="Modules" class="mySwiper" :autoplay="true && {delay:4000}" :loop="true" :navigation="{prevEl: '.swiper-button-prev',nextEl:'.swiper-button-next'}" :pagination="{type:'fraction'}" @slideChange="onSlideChange">
   
     <swiper-slide v-for="(e,index) in 5" :key="index" class="relative">
         <img :src="require(`@/assets/images/burger_${index+1}.png`)" alt="e">
-        <div class="absolute left-2/4 top-2/4 -translate-x-2/4 -translate-y-2/4 text-orange-500 font-extrabold">
-          <h3 data-wow-duration="1s" class="wow animate__fadeInDown">세상에 밝은 빛을 전해줄</h3>
-          <h3 data-wow-duration="5s" class="wow animate__fadeIn">저는 프론트엔드 개발자 입니다.</h3>
+        <div class="absolute left-2/4 top-2/4 -translate-x-2/4 -translate-y-2/4 font-extrabold">
+          <h3 data-wow-duration="1s" class="wow animate__fadeInDown text-green-500 text-3xl mice bg-white rounded-xl">{{ TitleData[0][index] }}</h3>
+          <h3 data-wow-duration="4s" class="wow animate__fadeIn text-green-500 text-3xl mice bg-white rounded-xl">{{ TitleData[1][0] }}</h3>
         </div>
       </swiper-slide>
     </swiper>
@@ -24,11 +24,14 @@ import 'swiper/css/navigation'
 
 import WOW from 'wowjs';
 import 'animate.css'
+
+import Data from '@/assets/Data.json'
   export default {
     name:"HomePage1",
     data() {
       return {
-        Modules :[Navigation,EffectFade,Pagination,Autoplay]
+        Modules :[Navigation,EffectFade,Pagination,Autoplay],
+        TitleData : Data.title
       }
     },
     components :{

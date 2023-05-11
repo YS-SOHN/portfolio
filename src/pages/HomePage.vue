@@ -3,7 +3,7 @@
 
   
   <!-- {{ MenuIndex }} -->
-  <div class="bg-gray-500 h-[970px] pb-96">home</div>
+  <!-- <div class="bg-gray-500 h-[970px] pb-96">home</div> -->
 </template>
 
 <script>

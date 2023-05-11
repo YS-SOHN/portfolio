@@ -12,7 +12,7 @@
             <li v-for="(e, index) in NavList[0]" :key="index">
               <!-- {{ langList.Nav[index] }} -->
               <button @click="$emit('MenuIndex',(index+1)+'페이지') ">
-                {{ langList.Nav[index] }}
+                {{ e }}
               </button>
             </li>
           </ul>
@@ -20,22 +20,25 @@
     </div>
   </div>
   <!-- {{ langList }} -->
+  
 </template>
 
 <script>
+import NavData from '../assets/Data.json'
   export default {
     name:"NavPage",
     data() {
       return {
-        NavList : [["프로필","스킬","포트폴리오"]]        
+        NavList:NavData.Nav
+        // NavList : [["프로필","스킬","포트폴리오","Life"]]  
+        
+
       }
     },
     props : {
       langList:Object,
     },
-    mounted(){
-      console.log(this.langList)
-    }
+    
   }
 </script>
 

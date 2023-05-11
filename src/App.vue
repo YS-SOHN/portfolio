@@ -1,4 +1,5 @@
 <template>
+  {{ Language }}
   
 {{ lang }}
 <NavMenu @MenuIndex="MenuIndex = $event;" @click="SectionMove()" :langList="langList[0]" />
@@ -20,6 +21,10 @@
   <Portfolio  />
 </div>
 
+<div ref="4페이지"> 
+  <Life  />
+</div>
+
 <div class="fixed">
  {{ MenuIndex }}
   </div>
@@ -29,12 +34,13 @@
 </template>
 
 <script>
-import Language from './assets/Language.json'
+import NavData from '@/assets/Data.json'
 import Home from './pages/HomePage.vue'
 import Profile from './pages/ProfilePage.vue'
 import Skill from './pages/SkillPage.vue'
 import NavMenu from './components/Nav.vue'
 import Portfolio from './pages/PortfolioPage.vue'
+import Life from './pages/LifePage.vue'
 
 export default {
   name: 'App',
@@ -43,12 +49,13 @@ export default {
     Profile,
     Skill,
     NavMenu,
-    Portfolio
+    Portfolio,
+    Life
   },
   data() {
     return {
       MenuIndex:'메인페이지',
-      langList:Language,
+      langList:NavData,
       ArrayList:'',
       lang:0
     }
