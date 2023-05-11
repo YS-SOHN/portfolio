@@ -11,21 +11,15 @@
 
               <div class="relative group overflow-hidden">
                  <img src="@/assets/images/4124936_1-thumb-450x450.png" alt="" class="rounded-md border hover:opacity-50">
-                 <div class="absolute top-[30%] -right-10">
-                   <button class="right-0 group-hover:opacity-100 group-hover:right-10 transition-all duration-500 opacity-0 absolute text-2xl">page</button><br>
-                   <button class="right-0 group-hover:opacity-100 group-hover:right-10 transition-all duration-500 opacity-0 absolute text-2xl">git</button>
-                 </div>
-                 <div class="absolute w-[450px] bg-black opacity-50 h-[400px] -bottom-[450px] group-hover:bottom-0 transition-all duration-500">profile</div>
-                 
+
+                <div class="absolute w-full bg-black opacity-0 h-[400px] bottom-0 group-hover:opacity-50 duration-1000">profile</div>
+
+                <button class="absolute group-hover:left-2/4 top-2/4 group-hover:-translate-x-2/4 -translate-y-2/4 text-white group-hover:opacity-100  opacity-0 left-0 transition-all duration-500 border w-28 rounded-2xl bg-orange-500">Move into</button><br>
+                <button class="absolute mt-10 group-hover:right-2/4 right-0 top-2/4 group-hover:translate-x-2/4 -translate-y-2/4 text-white group-hover:opacity-100 opacity-0 transition-all duration-500 border w-28 rounded-2xl bg-orange-500">git</button>
               </div>
-
-              
           </div>
-
       </div>
-
     </div>
-
   </div>
 
       <!-- <div class="bg-yellow-500 h-[970px]">portfolio
