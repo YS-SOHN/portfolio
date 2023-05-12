@@ -1,5 +1,5 @@
 <template>
-  
+
   <div class="w-full px-[2%] sticky top-0 bg-white py-2.5 z-50">
     <div class="max-w-7xl mx-auto flex justify-between items-center">
 
@@ -19,7 +19,6 @@
         </div>
     </div>
   </div>
-  <!-- {{ langList }} -->
   
 </template>
 
@@ -29,12 +28,11 @@ import NavData from '../assets/Data.json'
     name:"NavPage",
     data() {
       return {
-        NavList:NavData.Nav
-        // NavList : [["프로필","스킬","포트폴리오","Life"]]  
-        
-
+        NavList:NavData.Nav,
+        windowScroll : window.scrollY
       }
     },
+    
     props : {
       langList:Object,
     },

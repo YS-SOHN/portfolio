@@ -1,7 +1,7 @@
 <template>
-  {{ Language }}
+  <!-- {{ Language }}
   
-{{ lang }}
+{{ lang }} -->
 <NavMenu @MenuIndex="MenuIndex = $event;" @click="SectionMove()" :langList="langList[0]" />
   
 
@@ -25,12 +25,14 @@
   <Life  />
 </div>
 
-<div class="fixed">
+<!-- <div class="fixed">
  {{ MenuIndex }}
-  </div>
+  </div> -->
   
 
-  
+  <button class="z-50 fixed right-5 bottom-5 w-12 h-12 transition-all duration-1000" @click="scrollTop" :class="TopBtnChk ? 'visible opacity-100':'invisible opacity-0'">
+    <img src="@/assets/images/gotop.png" alt="top">
+  </button>
 </template>
 
 <script>
@@ -57,9 +59,12 @@ export default {
       MenuIndex:'메인페이지',
       langList:NavData,
       ArrayList:'',
-      lang:0
+      lang:0,
+      windowScroll: window.scrollY,
+      TopBtnChk:false
     }
   },
+  
   methods :{
     SectionMove(){
       const rect = this.ArrayList[this.MenuIndex].getBoundingClientRect();
@@ -70,11 +75,24 @@ export default {
       })
       // console.log(this.MenuIndex)
 
+    },
+    scrollTop(){
+      window.scrollTo({top:0,behavior:'smooth'})
+    },
+    updateScroll(){
+      this.windowScroll = window.scrollY
+      if(this.windowScroll >500){
+        this.TopBtnChk = true
+      } else {
+        this.TopBtnChk = false
+      }
     }
   },
   mounted(){
     this.ArrayList = this.$refs;
     console.log(this.ArrayList)
+
+     window.addEventListener("scroll",this.updateScroll)
     
     
     
