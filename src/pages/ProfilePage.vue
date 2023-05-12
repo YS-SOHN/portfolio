@@ -14,11 +14,11 @@
             </ul>
             
             <div class="w-full border h-full">
-              <div>
+              <!-- <div>
                   <h3 class="text-2xl">손 유상</h3>
                   <p>Yu-sang SOHN</p>
                   <p>1987.06.27</p>
-              </div>
+              </div> -->
               <div class="mt-5">
                   <h3 class="text-2xl">학력</h3>
                   <p>계명대학교 입학 (화학공학과) 2006</p>

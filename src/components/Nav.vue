@@ -8,10 +8,10 @@
         </button>
 
         <div class="basis-3/4 hidden md:block">
-          <ul class="flex justify-around">
+          <ul class="flex justify-end">
             <li v-for="(e, index) in NavList[0]" :key="index">
               <!-- {{ langList.Nav[index] }} -->
-              <button @click="$emit('MenuIndex',(index+1)+'페이지') ">
+              <button @click="$emit('MenuIndex',(index+1)+'페이지')" class="wando font-extrabold ml-5 text-2xl">
                 {{ e }}
               </button>
             </li>
