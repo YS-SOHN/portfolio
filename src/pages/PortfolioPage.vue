@@ -3,14 +3,13 @@
   <!-- <div class="bg-yellow-500 h-[970px]">portfolio
     </div> -->
   
-  
   <div>
     <div class="w-full">
       <div class="w-7xl mx-auto">
           <div class="w-2xl mx-auto flex justify-center gap-x-[2%] gap-y-10 flex-wrap border relative">
 
               <div class="relative group overflow-hidden">
-                 <img src="@/assets/images/4124936_1-thumb-450x450.png" alt="" class="rounded-md border hover:opacity-50">
+                 <img src="@/assets/images/4124936_1-thumb-450x450.png" alt="" class="rounded-md border hover:opacity-50 group-hover:scale-105 transition-all">
 
                 <div class="absolute w-full bg-black opacity-0 h-[400px] bottom-0 group-hover:opacity-50 duration-1000">profile</div>
 
@@ -33,18 +32,17 @@
               </div>
           </div>
       </div> -->
-
-
-
-
-      <!-- <div :style="{ 'background-image': 'url(' + require('@/assets/images/4124936_1-thumb-450x450') + ')' }"></div> -->
-  
+      
+      
 </template>
 
 <script>
+  
   export default {
     name:'PortfolioPage',
-    
+    components : {
+     
+    },
   }
 </script>
 
