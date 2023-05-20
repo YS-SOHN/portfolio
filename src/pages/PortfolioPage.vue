@@ -4,9 +4,9 @@
     </div> -->
   
   <div>
-    <div class="w-full">
+    <div class="w-full h-[970px]">
       <div class="w-7xl mx-auto">
-          <div class="w-2xl mx-auto flex justify-center gap-x-[2%] gap-y-10 flex-wrap border relative">
+          <div class="w-2xl mx-auto flex justify-center gap-x-[2%] gap-y-10 flex-wrap relative">
 
               <div class="relative group overflow-hidden">
                  <img src="@/assets/images/4124936_1-thumb-450x450.png" alt="" class="rounded-md border hover:opacity-50 group-hover:scale-105 transition-all">
@@ -14,7 +14,7 @@
                 <div class="absolute w-full bg-black opacity-0 h-[400px] bottom-0 group-hover:opacity-50 duration-1000">profile</div>
 
                 <button class="absolute group-hover:left-2/4 top-2/4 group-hover:-translate-x-2/4 -translate-y-2/4 text-white group-hover:opacity-100  opacity-0 left-0 transition-all duration-500 border w-28 rounded-2xl bg-orange-500 h-10">Move into</button><br>
-                <button class="absolute mt-12 group-hover:right-2/4 right-0 top-2/4 group-hover:translate-x-2/4 -translate-y-2/4 text-white group-hover:opacity-100 opacity-0 transition-all duration-500 border w-28 rounded-2xl bg-orange-500 h-10">git</button>
+                <button class="absolute mt-12 group-hover:right-2/4 right-0 top-2/4 group-hover:translate-x-2/4 -translate-y-2/4 text-white group-hover:opacity-100 opacity-0 transition-all duration-500 border w-28 rounded-2xl bg-orange-500 h-10">git Hub</button>
               </div>
           </div>
       </div>

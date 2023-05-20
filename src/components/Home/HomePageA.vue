@@ -1,6 +1,6 @@
 <template>
   <div>
-    <swiper :scrollbar="{hide: false}" :modules="Modules" class="mySwiper" :autoplay="true && {delay:4000}" :loop="true" :navigation="true" :pagination="true" @slideChange="onSlideChange">
+    <swiper :scrollbar="{hide: false}" :modules="Modules" class="mySwiper" :autoplay="true && {delay:5000}" :loop="true" :navigation="true" :pagination="true" @slideChange="onSlideChange">
   
     <swiper-slide v-for="(e,index) in 5" :key="index" class="relative">
         <img :src="require(`@/assets/images/burger_${index+1}.png`)" alt="e">
