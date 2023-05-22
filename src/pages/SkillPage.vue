@@ -32,13 +32,13 @@ export default {
           testList: "HTML",
           // 0에서 시작 -> 30까지 차는 모습을 보이기위해 Before와 Ater값을 주며, 바가 채워져있는 상태로 시작한다면 Before값 삭제
           progressBefore: 0,
-          progressAter: 60,
+          progressAter: 70,
           desc: "웹 표준에 준수하여, 마크업을 할 수 있다. float가 아닌 flex 및 grid를 활용한 레이아웃 구성을 할 수 있다."
         },
         {
           testList: "CSS",
           progressBefore: 0,
-          progressAter: 50,
+          progressAter: 70,
           desc: "가상 선택자와 스와이퍼 슬라이드를 이용한 페이지 스타일링"
         },
         {
@@ -56,15 +56,10 @@ export default {
         {
           testList: "Vue",
           progressBefore: 0,
-          progressAter: 40,
+          progressAter: 50,
           desc: "반복/조건문(v-for/v-if,else)을 사용하여 레이아웃에 데이터 유무 구분."
-        },
-        {
-          testList: "React",
-          progressBefore: 0,
-          progressAter: 20,
-          desc: "description."
         }
+        
       ]
     }
   },
