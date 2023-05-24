@@ -1,17 +1,59 @@
 <template>
-  portfolio-Page
-  <!-- <div class="bg-yellow-500 h-[970px]">portfolio
-    </div> -->
+  <div class="flex flex-wrap">
+    <div v-for="(e,index) in Contents" :key="e" class="flex justify-between">
+            <div>
+              <img :src="require(`@/assets/images/port_${index}.png`)" alt="img" class="w-[25%]">
+               <p>{{ e.title }}</p>
+               <p>{{ e.desc }}</p>
+               <p>{{ e.desc2 }}</p>
+               <p>{{ e.desc3 }}</p>
+
+            </div>
+              
+            </div>
+
+  </div>
+
+
+  <!-- portfolio-Page
+  <swiper
+    :pagination="{
+      type: 'fraction',
+    }"
+    :navigation="true"
+    :modules="modules"
+    class="mySwiper"
+  >
+    <swiper-slide>
+      <div class="w-7xl flex flex-wrap justify-between">
+        <div v-for="(e,index) in Contents" :key="e">
+          <div>
+            <img :src="require(`@/assets/images/port_${index}.png`)" alt="img" class="w-[25%]">
+             <p>{{ e.title }}</p>
+             <p>{{ e.desc }}</p>
+             <p>{{ e.desc2 }}</p>
+             <p>{{ e.desc3 }}</p>
+
+          </div>
+        </div>
+      </div>
+    </swiper-slide>
+    <swiper-slide>Slide 2</swiper-slide><swiper-slide>Slide 3</swiper-slide>
+    <swiper-slide>Slide 4</swiper-slide><swiper-slide>Slide 5</swiper-slide>
+    <swiper-slide>Slide 6</swiper-slide><swiper-slide>Slide 7</swiper-slide>
+    <swiper-slide>Slide 8</swiper-slide><swiper-slide>Slide 9</swiper-slide>
+  </swiper> -->
+
   
-  <div>
-    <!-- #1 -->
+  <!-- <div>
+    
     <div class="w-full">
       <div class="w-7xl mx-auto">
           <div class="max-w-7xl mx-auto flex justify-center gap-x-[2%] flex-wrap relative">
 
 
 
-            <!-- for -->
+            
             <div class="flex flex-wrap">
               <div v-for="(e,index) in Contents" :key="e" class="relative group overflow-hidden  gap-y-5 mb-5">
                    <img :src="require(`@/assets/images/port_${index}.png`)" alt="" class="rounded-md border hover:opacity-50 group-hover:scale-105 transition-all w-[400px]">
@@ -35,9 +77,54 @@
           </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
-      <!-- <div class="bg-yellow-500 h-[970px]">portfolio
+    
+      
+      
+</template>
+
+<script>
+  // Import Swiper Vue.js components
+  // import { Swiper, SwiperSlide } from 'swiper/vue';
+
+  // Import Swiper styles
+  import 'swiper/css';
+
+  import 'swiper/css/pagination';
+  import 'swiper/css/navigation';
+
+  // import './style.css';
+
+  // import required modules
+  // import { Pagination, Navigation } from 'swiper';
+  import Data from '@/assets/Data.json'
+
+  export default {
+    components: {
+      // Swiper,
+      // SwiperSlide,
+    },
+    setup() {
+      return {
+        // modules: [Pagination, Navigation],
+      };
+    },
+    data() {
+      return {
+        Contents:Data.contents
+      }
+    },
+  };
+</script>
+
+<style>
+
+</style>
+
+
+
+  <!-- <div class="bg-yellow-500 h-[970px]">portfolio
           <div class="w-full h-full relative group">
               <div class="absolute" :style="{'background-image':'url('+require('@/assets/images/4124936_1-thumb-450x450.png')+')'}">
               </div>
@@ -48,27 +135,3 @@
               </div>
           </div>
       </div> -->
-      
-      
-</template>
-
-<script>
-import Data from '@/assets/Data.json'
-  
-  export default {
-    name:'PortfolioPage',
-    data() {
-      return {
-        Contents : Data.contents
-      }
-    },
-    components : {
-    
-    },
-    
-  }
-</script>
-
-<style>
-
-</style>
