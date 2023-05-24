@@ -12,14 +12,21 @@
 
 
             <!-- for -->
-            <div v-for="(e,index) in 6" :key="e" class="relative group overflow-hidden flex flex-wrap">
-                 <img :src="require(`@/assets/images/port_${index}.jpg`)" alt="" class="rounded-md border hover:opacity-50 group-hover:scale-105 transition-all w-[400px]">
+            <div class="flex flex-wrap">
+              <div v-for="(e,index) in Contents" :key="e" class="relative group overflow-hidden  gap-y-5 mb-5">
+                   <img :src="require(`@/assets/images/port_${index}.png`)" alt="" class="rounded-md border hover:opacity-50 group-hover:scale-105 transition-all w-[400px]">
+                   <div class="mx-auto text-center">
+                     <h2 class="font-extrabold">{{ e.title }}</h2>
+                     <p>{{ e.desc }}</p>
+                     <p>{{ e.desc2 }}</p>
+                     <p>{{ e.desc3 }}</p>
+                   </div>
+                   
+                  <button class="absolute group-hover:left-2/4 top-2/4 group-hover:-translate-x-2/4 -translate-y-2/4 text-white group-hover:opacity-100  opacity-0 left-0 transition-all duration-500 border w-28 rounded-2xl bg-orange-500 h-10"><a href="#"> Move into</a></button><br>
+                  <button class="absolute mt-12 group-hover:right-2/4 right-0 top-2/4 group-hover:translate-x-2/4 -translate-y-2/4 text-white group-hover:opacity-100 opacity-0 transition-all duration-500 border w-28 rounded-2xl bg-orange-500 h-10">git Hub</button>
+                </div>
 
-                <div class="absolute w-full bg-black opacity-0 h-[400px] bottom-10 group-hover:opacity-50 duration-1000">profile</div>
-
-                <button class="absolute group-hover:left-2/4 top-2/4 group-hover:-translate-x-2/4 -translate-y-2/4 text-white group-hover:opacity-100  opacity-0 left-0 transition-all duration-500 border w-28 rounded-2xl bg-orange-500 h-10">Move into</button><br>
-                <button class="absolute mt-12 group-hover:right-2/4 right-0 top-2/4 group-hover:translate-x-2/4 -translate-y-2/4 text-white group-hover:opacity-100 opacity-0 transition-all duration-500 border w-28 rounded-2xl bg-orange-500 h-10">git Hub</button>
-              </div>
+            </div>
 
 
 
@@ -46,11 +53,17 @@
 </template>
 
 <script>
+import Data from '@/assets/Data.json'
   
   export default {
     name:'PortfolioPage',
+    data() {
+      return {
+        Contents : Data.contents
+      }
+    },
     components : {
-     
+    
     },
     
   }
