@@ -5,8 +5,8 @@
     <swiper-slide v-for="(e,index) in 5" :key="index" class="relative">
         <img :src="require(`@/assets/images/burger_${index+1}.png`)" alt="e">
         <div class="absolute left-2/4 top-2/4 -translate-x-2/4 -translate-y-2/4 font-extrabold">
-          <h3 data-wow-duration="1s" class="wow animate__fadeInDown text-white text-5xl mice rounded-xl cafe24">{{ TitleData[0][index] }}</h3>
-          <h3 data-wow-duration="4s" class="wow animate__fadeIn text-white text-5xl mice rounded-xl mt-5 cafe24">{{ TitleData[1][0] }}</h3>
+          <h3 data-wow-duration="1s" class="wow animate__fadeInDown text-white md:text-5xl mice rounded-xl cafe24 text-[28px]">{{ TitleData[0][index] }}</h3>
+          <h3 data-wow-duration="4s" class="wow animate__fadeIn text-white md:text-5xl mice rounded-xl mt-5 cafe24 text-[28px]">{{ TitleData[1][0] }}</h3>
         </div>
       </swiper-slide>
     </swiper>

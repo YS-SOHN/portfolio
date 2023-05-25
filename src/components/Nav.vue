@@ -7,7 +7,7 @@
           <img src="http://via.placeholder.com/120x50" alt="img">
         </button>
 
-        <div class="basis-3/4 hidden md:block">
+        <div class="basis-3/4 md:block mx-auto">
           <ul class="flex justify-end">
             <li v-for="(e, index) in NavList[0]" :key="index">
               <!-- {{ langList.Nav[index] }} -->

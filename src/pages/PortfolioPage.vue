@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-wrap">
+  <!-- <div class="flex flex-wrap">
     <div v-for="(e,index) in Contents" :key="e" class="flex justify-between">
             <div>
               <img :src="require(`@/assets/images/port_${index}.png`)" alt="img" class="w-[25%]">
@@ -12,76 +12,32 @@
               
             </div>
 
-  </div>
+  </div> -->
 
 
-  <!-- portfolio-Page
-  <swiper
-    :pagination="{
-      type: 'fraction',
-    }"
-    :navigation="true"
-    :modules="modules"
-    class="mySwiper"
-  >
-    <swiper-slide>
-      <div class="w-7xl flex flex-wrap justify-between">
-        <div v-for="(e,index) in Contents" :key="e">
-          <div>
-            <img :src="require(`@/assets/images/port_${index}.png`)" alt="img" class="w-[25%]">
-             <p>{{ e.title }}</p>
-             <p>{{ e.desc }}</p>
-             <p>{{ e.desc2 }}</p>
-             <p>{{ e.desc3 }}</p>
-
-          </div>
-        </div>
-      </div>
-    </swiper-slide>
-    <swiper-slide>Slide 2</swiper-slide><swiper-slide>Slide 3</swiper-slide>
-    <swiper-slide>Slide 4</swiper-slide><swiper-slide>Slide 5</swiper-slide>
-    <swiper-slide>Slide 6</swiper-slide><swiper-slide>Slide 7</swiper-slide>
-    <swiper-slide>Slide 8</swiper-slide><swiper-slide>Slide 9</swiper-slide>
-  </swiper> -->
-
-  
-  <!-- <div>
-    
+  <div>
     <div class="w-full">
       <div class="w-7xl mx-auto">
-          <div class="max-w-7xl mx-auto flex justify-center gap-x-[2%] flex-wrap relative">
-
-
-
-            
-            <div class="flex flex-wrap">
-              <div v-for="(e,index) in Contents" :key="e" class="relative group overflow-hidden  gap-y-5 mb-5">
-                   <img :src="require(`@/assets/images/port_${index}.png`)" alt="" class="rounded-md border hover:opacity-50 group-hover:scale-105 transition-all w-[400px]">
+          <div class="max-w-7xl mx-auto flex justify-center flex-wrap relative">
+            <div class="flex flex-wrap gap-x-[2%]">
+              <div v-for="(e,index) in Contents" :key="e" class="relative group overflow-hidden  gap-y-5 mb-5 md:w-[48%] lg:w-[32%] w-[99%] sm:mx-auto">
+                   <img :src="require(`@/assets/images/port_${index}.png`)" alt="" class="rounded-md hover:opacity-50 group-hover:scale-105 transition-all w-[400px] mx-auto">
                    <div class="mx-auto text-center">
-                     <h2 class="font-extrabold">{{ e.title }}</h2>
+                     <h2 class="font-extrabold mt-3">{{ e.title }}</h2>
                      <p>{{ e.desc }}</p>
                      <p>{{ e.desc2 }}</p>
                      <p>{{ e.desc3 }}</p>
+                     <p>{{ e.desc4 }}</p>
                    </div>
                    
-                  <button class="absolute group-hover:left-2/4 top-2/4 group-hover:-translate-x-2/4 -translate-y-2/4 text-white group-hover:opacity-100  opacity-0 left-0 transition-all duration-500 border w-28 rounded-2xl bg-orange-500 h-10"><a href="#"> Move into</a></button><br>
+                  <button class="absolute group-hover:left-2/4 top-2/4 group-hover:-translate-x-2/4 -translate-y-2/4 text-white group-hover:opacity-100  opacity-0 left-0 transition-all duration-500 border w-28 rounded-2xl bg-orange-500 h-10"><a :href="e.link" target="_blank"> Move into</a></button><br>
                   <button class="absolute mt-12 group-hover:right-2/4 right-0 top-2/4 group-hover:translate-x-2/4 -translate-y-2/4 text-white group-hover:opacity-100 opacity-0 transition-all duration-500 border w-28 rounded-2xl bg-orange-500 h-10">git Hub</button>
                 </div>
-
             </div>
-
-
-
-             
-
           </div>
       </div>
     </div>
-  </div> -->
-
-    
-      
-      
+  </div>
 </template>
 
 <script>
