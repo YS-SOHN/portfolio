@@ -79,14 +79,14 @@
           },
           {
             title:"LICENCE",
-            desc:" - 워드프로세서 1급",
-            desc2:" - 정보처리기능사",
-            desc3:" - 컴퓨터활용능력 2급"
+            desc:"워드프로세서 1급",
+            desc2:"정보처리기능사",
+            desc3:"컴퓨터활용능력 2급"
           },
           {
             title:"Hobby",
-            desc:" - MTB, RoadBike",
-            desc2:" - 국내외 여행",
+            desc:"MTB, RoadBike",
+            desc2:"국내외 여행",
             desc3:"",
           }
         ]

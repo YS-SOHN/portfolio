@@ -16,43 +16,50 @@
     "desc" : "구성 : 메인페이지",
     "desc2" : "소요일 : 4~5일",
     "desc3" : "기여도 : 90%",
-    "desc4" : "코딩 목적 : 코딩 입문",
-    "link" : "http://sdg0627.dothome.co.kr/gwangju"
+    "desc4" : "코딩 목적 : 코딩 입문(자작)",
+    "link" : "http://sdg0627.dothome.co.kr/gwangju",
+    "tool" : "Tool : HTML CSS"
   },
   {
     "title" : "KFC",
     "desc" : "구성 : 메인페이지, 게시판, 로그인, 회원가입",
     "desc2" : "소요일 : 4~5일",
     "desc3" : "기여도 : 98%",
-    "desc4" : "코딩 목적 : 수료작품 대비",
-    "link" : "http://sdg0627.dothome.co.kr/kfc"
+    "desc4" : "코딩 목적 : 수료작품 대비(자작)",
+    "link" : "http://sdg0627.dothome.co.kr/kfc",
+    "tool" : "Tool : Vue"
   },
   {
     "title" : "거제청년센터",
     "desc" : "구성 : 메인페이지",
     "desc2" : "소요일 : 4~5일",
+    "desc3" : "",
+    "desc4" : "코딩 목적 : 코딩과 친해지기(수업)",
+    "tool" : "Tool : HTML CSS"
+  },
+  {
+    "title" : "대구상수도사업본부",
+    "desc" : "구성 : 메인페이지",
+    "desc2" : "소요일 : 4~5일",
+    "desc3" : "",
+    "desc4" : "코딩 목적 : 네비게이션,프레임제작(수업)",
+    "link" : "http://sdg0627.dothome.co.kr/waterworks",
+    "tool" : "Tool : Vue"
+  },
+  {
+    "title" : "강원도 춘천시 관내 문화축제",
+    "desc" : "구성 : 메인페이지",
+    "desc2" : "소요일 : 4~5일",
     "desc3" : "기여도 : 100%",
-    "desc4" : "코딩 목적 : 코딩과 친해지기"
+    "desc4" : "코딩 목적 : 공공데이터 포털API 사용법",
+    "link" : "http://sdg0627.dothome.co.kr/festival",
+    "tool" : "Tool : Vue"
   },
   {
     "title" : "광주광역시청",
     "desc" : "구성 : 메인페이지",
     "desc2" : "소요일 : 4~5일",
-    "desc3" : "기여도 : 100%",
-    "desc4" : "코딩 목적 : 코딩과 친해지기"
-  },
-  {
-    "title" : "광주광역시청",
-    "desc" : "구성 : 메인페이지",
-    "desc2" : "소요일 : 4~5일",
-    "desc3" : "기여도 : 100%",
-    "desc4" : "코딩 목적 : 코딩과 친해지기"
-  },
-  {
-    "title" : "광주광역시청",
-    "desc" : "구성 : 메인페이지",
-    "desc2" : "소요일 : 4~5일",
-    "desc3" : "기여도 : 100%",
+    "desc3" : "",
     "desc4" : "코딩 목적 : 코딩과 친해지기"
   }
 ]

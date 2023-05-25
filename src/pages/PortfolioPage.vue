@@ -28,6 +28,7 @@
                      <p>{{ e.desc2 }}</p>
                      <p>{{ e.desc3 }}</p>
                      <p>{{ e.desc4 }}</p>
+                     <p>{{ e.tool }}</p>
                    </div>
                    
                   <button class="absolute group-hover:left-2/4 top-2/4 group-hover:-translate-x-2/4 -translate-y-2/4 text-white group-hover:opacity-100  opacity-0 left-0 transition-all duration-500 border w-28 rounded-2xl bg-orange-500 h-10"><a :href="e.link" target="_blank"> Move into</a></button><br>
