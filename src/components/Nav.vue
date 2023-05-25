@@ -7,8 +7,8 @@
           <img src="http://via.placeholder.com/120x50" alt="img">
         </button>
 
-        <div class="basis-3/4 md:block mx-auto">
-          <ul class="flex justify-end">
+        <div class="basis-3/4 md:block">
+          <ul class="flex mx-auto">
             <li v-for="(e, index) in NavList[0]" :key="index">
               <!-- {{ langList.Nav[index] }} -->
               <button @click="$emit('MenuIndex',(index+1)+'페이지')" class="wando font-extrabold ml-5 text-2xl">

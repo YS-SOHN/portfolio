@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full text-white bg-[#164562] h-[970px] relative ">profile
+  <div class="w-full text-white bg-[#164562] h-[970px] relative ">
     <p class="relative mx-auto text-center mb-14 oa text-3xl after:absolute after:w-full after:h-2 after:bg-red-500 after:left-0 after:bottom-0 w-[220px] h-[50px] mt-14">ABOUT ME</p>
 
 
@@ -7,7 +7,7 @@
     <div class="hidden md:block lg:block">
       <div class="max-w-4xl h-96 flex justify-around gap-x-[2%] mx-auto relative flex-wrap">
         <div>
-            <img src="http://via.placeholder.com/150x150" alt="">
+            <img src="http://via.placeholder.com/150x150" alt="" class="rounded-full">
             <ul class="">
                 <li>손유상</li>
                 <li>1987 . 06 . 27</li>
@@ -31,7 +31,7 @@
     <div class="md:hidden lg:hidden">
       <div class="max-w-4xl h-96 flex justify-around gap-x-[2%] mx-auto relative flex-wrap">
         <div class="flex mb-10">
-            <img src="http://via.placeholder.com/150x150" alt="">
+            <img src="http://via.placeholder.com/150x150" alt="" class="rounded-full">
             <ul class="ml-5 mt-9">
                 <li>손유상</li>
                 <li>1987 . 06 . 27</li>
