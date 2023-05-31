@@ -34,8 +34,16 @@
                      <p>{{ e.tool }}</p>
                    </div>
                    
-                  <button class="absolute group-hover:left-2/4 top-2/4 group-hover:-translate-x-2/4 -translate-y-2/4 text-white group-hover:opacity-100  opacity-0 left-0 transition-all duration-500 border w-28 rounded-2xl bg-orange-500 h-10"><a :href="e.link" target="_blank"> Move into</a></button><br>
-                  <button class="absolute mt-12 group-hover:right-2/4 right-0 top-2/4 group-hover:translate-x-2/4 -translate-y-2/4 text-white group-hover:opacity-100 opacity-0 transition-all duration-500 border w-28 rounded-2xl bg-orange-500 h-10">git Hub</button>
+                   <div class="flex justify-center mt-2">
+                     <div class="flex bottom-0 mx-auto gap-x-3">
+
+                    <button type="button" class="text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"><a :href="e.link" target="_blank">Move Into</a></button>
+
+                    <button type="button" class="text-white bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-pink-300 dark:focus:ring-pink-800 shadow-lg shadow-pink-500/50 dark:shadow-lg dark:shadow-pink-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">git Hub</button>
+
+
+                     </div>
+                   </div>
                 </div>
             </div>
           </div>

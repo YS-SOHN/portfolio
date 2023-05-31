@@ -4,11 +4,11 @@
     <div class="max-w-7xl mx-auto flex justify-between items-center">
 
         <button @click="$emit('MenuIndex','메인페이지')">
-          <img src="http://via.placeholder.com/120x50" alt="img">
+          <img src="http://via.placeholder.com/120" class="rounded-full" alt="img">
         </button>
 
         <div class="basis-3/4 md:block">
-          <ul class="flex mx-auto">
+          <ul class="flex mx-auto flex-basis gap-x-20">
             <li v-for="(e, index) in NavList[0]" :key="index">
               <!-- {{ langList.Nav[index] }} -->
               <button @click="$emit('MenuIndex',(index+1)+'페이지')" class="wando font-extrabold ml-5 text-2xl">

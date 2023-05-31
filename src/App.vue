@@ -102,4 +102,5 @@ export default {
 
 <style>
   .duration {animation-duration: .5s;}
+  body {font-family: 'S-CoreDream-3Light';}
 </style>

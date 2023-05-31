@@ -1,9 +1,9 @@
 <template>
   <div class="w-full text-white bg-[#164562] h-[970px] relative ">
-    <p class="h-8 w-full"></p>
-    <p class="w-full h-8"></p>
+    <!-- <p class="h-8 w-full"></p>
+    <p class="w-full h-8"></p> -->
     <Title title="ABOUT ME" />
-    <p class="relative mx-auto text-center mb-14 oa text-3xl after:absolute after:w-10 after:h-0.5  after:bg-red-500 after:left-2/4 after:-translate-x-2/4 after:bottom-0 w-[220px] h-[50px] mt-14">ABOUT ME</p>
+    <!-- <p class="relative mx-auto text-center mb-14 oa text-3xl after:absolute after:w-10 after:h-0.5  after:bg-red-500 after:left-2/4 after:-translate-x-2/4 after:bottom-0 w-[220px] h-[50px] mt-14">ABOUT ME</p> -->
 
 
     <!-- #1 md, lg -->
