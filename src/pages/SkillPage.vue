@@ -1,7 +1,7 @@
 <template lang="">
   <!-- mt-nn -->
   <div class="w-full pt-8 mt-8 px-[2%] pb-8">
-    <Title title="스킬" /> <!-- 각 페이지 별 타이틀을 컴포넌트 화해서 props 방식으로 동시 적용 -->
+    <Title title="Skill" /> <!-- 각 페이지 별 타이틀을 컴포넌트 화해서 props 방식으로 동시 적용 -->
     <div class="max-w-7xl mx-auto mt-8">
       <div class="bg-white rounded-md border darkMode p-5 mb-8 last:mb-0">
         <div class="w-full h-20" v-for="e in ProgressList" :key="e">

@@ -1,6 +1,9 @@
 <template>
   <div class="w-full text-white bg-[#164562] h-[970px] relative ">
-    <p class="relative mx-auto text-center mb-14 oa text-3xl after:absolute after:w-full after:h-2 after:bg-red-500 after:left-0 after:bottom-0 w-[220px] h-[50px] mt-14">ABOUT ME</p>
+    <p class="h-8 w-full"></p>
+    <p class="w-full h-8"></p>
+    <Title title="ABOUT ME" />
+    <p class="relative mx-auto text-center mb-14 oa text-3xl after:absolute after:w-10 after:h-0.5  after:bg-red-500 after:left-2/4 after:-translate-x-2/4 after:bottom-0 w-[220px] h-[50px] mt-14">ABOUT ME</p>
 
 
     <!-- #1 md, lg -->
@@ -10,7 +13,7 @@
             <img src="http://via.placeholder.com/150x150" alt="" class="rounded-full">
             <ul class="">
                 <li>손유상</li>
-                <li>1987 . 06 . 27</li>
+                <li>Yu-sang SOHN</li>
                 <li>E-mail : sdg0627@naver.com</li>
             </ul>
         </div>
@@ -58,8 +61,12 @@
 </template>
 
 <script>
+import Title from '@/components/Title.vue'
   export default {
     name:'ProfilePage',
+    components:{
+      Title
+    },
     data() {
       return {
         contents : [

@@ -15,8 +15,11 @@
   </div> -->
 
 
+
   <div>
+
     <div class="w-full">
+      <Title title="PortPolio" />
       <div class="w-7xl mx-auto">
           <div class="max-w-7xl mx-auto flex justify-center flex-wrap relative">
             <div class="flex flex-wrap gap-x-[2%]">
@@ -56,11 +59,13 @@
   // import required modules
   // import { Pagination, Navigation } from 'swiper';
   import Data from '@/assets/Data.json'
+  import Title from '@/components/Title.vue'
 
   export default {
     components: {
       // Swiper,
       // SwiperSlide,
+      Title
     },
     setup() {
       return {

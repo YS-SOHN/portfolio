@@ -58,7 +58,15 @@ import Data from '@/assets/Data.json'
 </script>
 
 <style>
-/* :root{
-  --swiper-theme-color{background:orange}
-} */
+:root{
+  --swiper-theme-color: orange;
+}
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+  width: 90%;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
 </style>
