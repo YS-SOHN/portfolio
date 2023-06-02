@@ -2,15 +2,16 @@
   <div>
 <div class="relative">
   <img :src="'background.jpg'" alt="" class="scale-110">
-  <div class="absolute w-50 left-[150px] top-[260px] border-2 h-72 border-red-500 text-red-500">
+
+  <!-- 빨간 짝대기 -->
+  <div class="absolute w-50 left-[300px] top-[180px] border-4 h-96 border-red-500 text-red-500 wow animate__fadeInDown">
   </div>
 
-  <div class="absolute left-36 bottom-96">
+  <div class="absolute left-[300px] bottom-96">
     <h3 data-wow-duration="1s" class="wow animate__fadeInDown text-white md:text-4xl mice rounded-xl cafe24 text-[28px]">
     {{ TitleData[0][2] }}</h3>
-    <h3 data-wow-duration="4s" class="wow animate__fadeIn text-white md:text-5xl mice rounded-xl mt-5 cafe24 text-[28px] font-extrabold">저는 프론트엔드 개발자 <span class="text-[#2e5769] font-extrabold">손유상</span> 입니다</h3>
+    <h3 data-wow-duration="4s" class="wow animate__fadeIn text-white md:text-5xl mice rounded-xl mt-5 cafe24 text-[28px] font-extrabold">저는 프론트엔드 개발자 <span class="text-[#2f6075] font-extrabold">손유상</span> 입니다</h3>
   </div>
-
 </div>
     
 

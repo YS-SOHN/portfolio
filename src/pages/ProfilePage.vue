@@ -1,72 +1,86 @@
 <template>
-  <div class="w-full text-white bg-[#164562] h-[970px] relative ">
-    <!-- <p class="h-8 w-full"></p>
-    <p class="w-full h-8"></p> -->
-    <Title title="ABOUT ME" />
-    <!-- <p class="relative mx-auto text-center mb-14 oa text-3xl after:absolute after:w-10 after:h-0.5  after:bg-red-500 after:left-2/4 after:-translate-x-2/4 after:bottom-0 w-[220px] h-[50px] mt-14">ABOUT ME</p> -->
+  <div class="w-full text-white bg-[#164562] h-[970px] relative pt-[170px]">
 
+      <div class="flex justify-center gap-x-28 pt-24 items-center">
+          <div>
+            <!-- 사진 -->
+            <img src="http://via.placeholder.com/120" alt="" class="rounded-full">
+          </div>
+          <div class="w-1 h-36 bg-red-500">
 
-    <!-- #1 md, lg -->
-    <div class="hidden md:block lg:block">
-      <div class="max-w-4xl h-96 flex justify-around gap-x-[2%] mx-auto relative flex-wrap">
-        <div>
-            <img src="http://via.placeholder.com/150x150" alt="" class="rounded-full">
-            <ul class="">
-                <li>손유상</li>
-                <li>Yu-sang SOHN</li>
-                <li>E-mail : sdg0627@naver.com</li>
-            </ul>
+          </div>
+          <div>
+              <h1>손유상</h1>
+              <h3>Yu-sang SOHN</h3>
+              <h4>sdg0627@naver.com</h4>
+          </div>
+      </div>
+
+      <div class="items-center max-w-7xl mx-auto mt-20 flex gap-x-7">
+        <!-- education -->
+        <div class="relative before:absolute before:-top-4 before:-left-4 before:w-4 before:h-4 before:bg-red-500 font-semibold text-lg">Education
+            <div class="items-center flex">
+              <!-- Education -->
+              <span class="text-3xl font-extrabold mr-7">2022</span>
+              <div class="items-center">
+                <p>(디지털컨버전스)스마트 혼합-뷰(vue)활용</p>
+                <p>프론트엔드 개발자 양성과정B 22.12.29~23.06.12</p>
+              </div>
+            </div>
+            <div class="items-center flex">
+              <!-- Education -->
+              <span class="text-3xl font-extrabold mr-7">2009</span>
+              <div class="items-center">
+                <p>Working Holiday | Brisbane Aus.</p>
+              </div>
+            </div>
+            <div class="items-center flex">
+              <!-- Education -->
+              <span class="text-3xl font-extrabold mr-7">2006</span>
+              <div class="items-center">
+                <p>계명대학교 (화학공학) 2006~2012</p>
+              </div>
+            </div>
         </div>
-        <div>
-          <div v-for="e in contents" :key="e" class="mb-5">
-                <h3 class="text-xl font-extrabold mb-2">{{ e.title }}</h3>
-                <p>{{ e.desc }}</p>
-                <p>{{ e.desc1 }}</p>
-                <p>{{ e.desc2 }}</p>
-                <p>{{ e.desc3 }}</p>
-                <p>{{ e.desc4 }}</p>
+
+        <div class="mt-4 text-[#164562] font-extrabold text-2xl">
+          <!-- chana -->
+          <div class="flex gap-x-4 mb-4">
+              <div class="bg-[#236892] w-44 h-[90px] rounded-lg pl-2">AUSTRALIA <br>
+                 <ul class="flex flex-wrap">
+                    <li class="text-xs">Sydney |</li>
+                    <li class="text-xs">| Melbourne |</li>
+                    <li class="text-xs">| Tasmania |</li>
+                    <li class="text-xs">| Brisbane |</li>
+                    <li class="text-xs">| GoldCoast |</li>
+                 </ul>
+                </div>
+              <div class="bg-[#236892] w-44 h-[90px] rounded-lg pl-2">JAPAN
+                  <ul class="flex flex-wrap">
+                      <li class="text-xs">Osaka |</li>
+                      <li class="text-xs">| Kyoto</li>
+                  </ul>
+              </div>
+          </div>
+          <div class="flex gap-4">
+              <div class="bg-[#236892] w-44 h-[90px] rounded-lg pl-2 flex flex-wrap">CHINA</div>
+              <div class="bg-[#236892] w-44 h-[90px] rounded-lg pl-2 flex flex-wrap">TAIWAN</div>
           </div>
         </div>
-      </div>
-    </div>
-
-    <!-- #2 sm -->
-    <div class="md:hidden lg:hidden">
-      <div class="max-w-4xl h-96 flex justify-around gap-x-[2%] mx-auto relative flex-wrap">
-        <div class="flex mb-10">
-            <img src="http://via.placeholder.com/150x150" alt="" class="rounded-full">
-            <ul class="ml-5 mt-9">
-                <li>손유상</li>
-                <li>1987 . 06 . 27</li>
-                <li>E-mail : sdg0627@naver.com</li>
-            </ul>
-        </div>
+        
         <div>
-          <div v-for="e in contents" :key="e" class="mb-5 text-center">
-                <h3 class="text-xl font-extrabold mb-2">{{ e.title }}</h3>
-                <p>{{ e.desc }}</p>
-                <p>{{ e.desc1 }}</p>
-                <p>{{ e.desc2 }}</p>
-                <p>{{ e.desc3 }}</p>
-                <p>{{ e.desc4 }}</p>
-          </div>
+          <!-- licence -->
         </div>
       </div>
-    </div>
-  
-
-
-
+    
   </div>
 </template>
 
 <script>
-import Title from '@/components/Title.vue'
+
   export default {
     name:'ProfilePage',
-    components:{
-      Title
-    },
+
     data() {
       return {
         contents : [

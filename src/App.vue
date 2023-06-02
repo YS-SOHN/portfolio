@@ -29,7 +29,7 @@
  {{ MenuIndex }}
   </div> -->
   
-
+<!-- 상단으로 이동 버튼 -->
   <button class="z-50 fixed right-5 bottom-5 w-12 h-12 transition-all duration-1000" @click="scrollTop" :class="TopBtnChk ? 'visible opacity-100':'invisible opacity-0'">
     <img src="@/assets/images/gotop.png" alt="top">
   </button>
@@ -68,7 +68,7 @@ export default {
   methods :{
     SectionMove(){
       const rect = this.ArrayList[this.MenuIndex].getBoundingClientRect();
-      const offset = rect.top + window.scrollY-140;
+      const offset = rect.top + window.scrollY;
       window.scrollTo({
         top:offset,
         behavior:'smooth'
@@ -94,10 +94,8 @@ export default {
 
      window.addEventListener("scroll",this.updateScroll)
     
-    
-    
-  }
-}
+  },
+    }
 </script>
 
 <style>
