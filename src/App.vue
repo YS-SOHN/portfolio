@@ -68,7 +68,7 @@ export default {
   methods :{
     SectionMove(){
       const rect = this.ArrayList[this.MenuIndex].getBoundingClientRect();
-      const offset = rect.top + window.scrollY-70;
+      const offset = rect.top + window.scrollY-140;
       window.scrollTo({
         top:offset,
         behavior:'smooth'

@@ -1,6 +1,22 @@
 <template>
   <div>
-    <swiper :scrollbar="{hide: false}" :modules="Modules" class="mySwiper" :autoplay="true && {delay:5000}" :loop="true" :navigation="true" :pagination="true" @slideChange="onSlideChange">
+<div class="relative">
+  <img :src="'background.jpg'" alt="" class="scale-110">
+  <div class="absolute w-50 left-[150px] top-[260px] border-2 h-72 border-red-500 text-red-500">
+  </div>
+
+  <div class="absolute left-36 bottom-96">
+    <h3 data-wow-duration="1s" class="wow animate__fadeInDown text-white md:text-4xl mice rounded-xl cafe24 text-[28px]">
+    {{ TitleData[0][2] }}</h3>
+    <h3 data-wow-duration="4s" class="wow animate__fadeIn text-white md:text-5xl mice rounded-xl mt-5 cafe24 text-[28px] font-extrabold">저는 프론트엔드 개발자 <span class="text-[#2e5769] font-extrabold">손유상</span> 입니다</h3>
+  </div>
+
+</div>
+    
+
+
+
+    <!-- <swiper :scrollbar="{hide: false}" :modules="Modules" class="mySwiper" :autoplay="true && {delay:5000}" :loop="true" :navigation="true" :pagination="true" @slideChange="onSlideChange">
   
     <swiper-slide v-for="(e,index) in 5" :key="index" class="relative">
         <img :src="require(`@/assets/images/burger_${index+1}.png`)" alt="e">
@@ -9,18 +25,17 @@
           <h3 data-wow-duration="4s" class="wow animate__fadeIn text-white md:text-5xl mice rounded-xl mt-5 cafe24 text-[28px]">{{ TitleData[1][0] }}</h3>
         </div>
       </swiper-slide>
-    </swiper>
+    </swiper> -->
   </div>
 </template>
 
 <script>
-import {Swiper,SwiperSlide } from 'swiper/vue'
-import {Navigation, EffectFade,Autoplay,Pagination} from 'swiper'
 
-import 'swiper/css'
-import 'swiper/css/bundle'
-import 'swiper/css/pagination'
-import 'swiper/css/navigation'
+
+// import 'swiper/css'
+// import 'swiper/css/bundle'
+// import 'swiper/css/pagination'
+// import 'swiper/css/navigation'
 
 import WOW from 'wowjs';
 import 'animate.css'
@@ -30,14 +45,14 @@ import Data from '@/assets/Data.json'
     name:"HomePage1",
     data() {
       return {
-        Modules :[Navigation,EffectFade,Pagination,Autoplay],
+        // Modules :[Navigation,EffectFade,Pagination,Autoplay],
         TitleData : Data.title
       }
     },
-    components :{
-      Swiper,
-      SwiperSlide
-    },
+    // components :{
+    //   Swiper,
+    //   SwiperSlide
+    // },
     mounted(){
       new WOW.WOW({
         boxClass:"wow",

@@ -9,7 +9,7 @@
 
         <div class="basis-3/4 md:block">
           <ul class="flex mx-auto flex-basis gap-x-20">
-            <li v-for="(e, index) in NavList[0]" :key="index">
+            <li v-for="(e, index) in NavList[0]" :key="index" class="nanum">
               <!-- {{ langList.Nav[index] }} -->
               <button @click="$emit('MenuIndex',(index+1)+'페이지')" class="wando font-extrabold ml-5 text-2xl">
                 {{ e }}
@@ -41,5 +41,14 @@ import NavData from '../assets/Data.json'
 </script>
 
 <style>
+@font-face {
+    font-family: 'NanumSquareNeo-Variable';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.nanum {font-family: 'NanumSquareNeo-Variable';}
 
 </style>
