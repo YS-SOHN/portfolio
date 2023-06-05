@@ -25,12 +25,12 @@
             <div class="flex flex-wrap gap-x-[2%]">
               <div v-for="(e,index) in Contents" :key="e" class="relative group overflow-hidden  gap-y-5 mb-5 md:w-[48%] lg:w-[32%] w-[99%] sm:mx-auto">
                    <img :src="require(`@/assets/images/port_${index}.png`)" alt="" class="rounded-md hover:opacity-50 group-hover:scale-105 transition-all w-[400px] mx-auto">
-                   <div class="mx-auto text-center">
+                   <div>
                      <h2 class="font-extrabold mt-3">{{ e.title }}</h2>
-                     <p>{{ e.desc }}</p>
-                     <p>{{ e.desc2 }}</p>
-                     <p>{{ e.desc3 }}</p>
-                     <p>{{ e.desc4 }}</p>
+                     <p><span>{{ e.desc[0].title }}</span><span>{{ e.desc[0].title2 }}</span></p>
+                     <p><span>{{ e.desc2[0].title }}</span><span>{{ e.desc2[0].title2 }}</span></p>
+                     <p><span>{{ e.desc3[0].title }}</span><span>{{ e.desc3[0].title2 }}</span></p>
+                     <p><span>{{ e.desc4[0].title }}</span><span>{{ e.desc4[0].title2 }}</span></p>
                      <p>{{ e.tool }}</p>
                    </div>
                    

@@ -48,23 +48,31 @@
           <div class="flex gap-x-4 mb-4">
               <div class="bg-[#236892] w-44 h-[90px] rounded-lg pl-2">AUSTRALIA <br>
                  <ul class="flex flex-wrap">
-                    <li class="text-xs">Sydney |</li>
-                    <li class="text-xs">| Melbourne |</li>
-                    <li class="text-xs">| Tasmania |</li>
-                    <li class="text-xs">| Brisbane |</li>
-                    <li class="text-xs">| GoldCoast |</li>
+                    <li class="text-xs">Sydney |&nbsp;</li>
+                    <li class="text-xs">Melbourne |&nbsp;</li>
+                    <li class="text-xs">Tasmania |&nbsp;</li>
+                    <li class="text-xs">Brisbane |&nbsp;</li>
+                    <li class="text-xs">GoldCoast</li>
                  </ul>
                 </div>
               <div class="bg-[#236892] w-44 h-[90px] rounded-lg pl-2">JAPAN
                   <ul class="flex flex-wrap">
-                      <li class="text-xs">Osaka |</li>
-                      <li class="text-xs">| Kyoto</li>
+                      <li class="text-xs">Osaka |&nbsp;</li>
+                      <li class="text-xs">Kyoto</li>
                   </ul>
               </div>
           </div>
           <div class="flex gap-4">
-              <div class="bg-[#236892] w-44 h-[90px] rounded-lg pl-2 flex flex-wrap">CHINA</div>
-              <div class="bg-[#236892] w-44 h-[90px] rounded-lg pl-2 flex flex-wrap">TAIWAN</div>
+              <div class="bg-[#236892] w-44 h-[90px] rounded-lg pl-2 flex flex-wrap">CHINA
+                <ul class="flex flex-wrap">
+                  <li class="text-xs">Beijing |&nbsp;</li>
+                    <li class="text-xs">Yanbian |&nbsp;</li>
+                    <li class="text-xs">Yanji</li>
+                </ul>
+              </div>
+              <div class="bg-[#236892] w-44 h-[90px] rounded-lg pl-2 flex flex-wrap">TAIWAN
+                  <div class="text-xs basis-full">Taipei</div>
+              </div>
           </div>
         </div>
         
