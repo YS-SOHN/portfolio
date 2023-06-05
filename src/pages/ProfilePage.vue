@@ -46,7 +46,7 @@
         <div class="mt-4 text-[#164562] font-extrabold text-2xl">
           <!-- chana -->
           <div class="flex gap-x-4 mb-4">
-              <div class="bg-[#236892] w-44 h-[90px] rounded-lg pl-2">AUSTRALIA <br>
+              <div class="bg-[#236892] w-44 h-[90px] rounded-lg pl-2">AUSTRALIA  
                  <ul class="flex flex-wrap">
                     <li class="text-xs">Sydney |&nbsp;</li>
                     <li class="text-xs">Melbourne |&nbsp;</li>
@@ -78,6 +78,19 @@
         
         <div>
           <!-- licence -->
+            <h2 class="font-extrabold text-xl mb-2">Licence</h2>
+            <div class="mb-1">
+                <p class="font-bold">2023.00</p>
+                <p class="font-light">워드프로세서 1급</p>
+            </div>
+            <div class="mb-1">
+                <p class="font-extrabold">2023.00</p>
+                <p class="font-light">정보처리기능사</p>
+            </div>
+            <div>
+                <p class="font-extrabold">2023.00</p>
+                <p class="font-light">컴퓨터활용능력 2급</p>
+            </div>
         </div>
       </div>
     
