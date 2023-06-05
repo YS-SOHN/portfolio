@@ -25,21 +25,21 @@
             <div class="flex flex-wrap gap-x-[2%]">
               <div v-for="(e,index) in Contents" :key="e" class="relative group overflow-hidden  gap-y-5 mb-5 md:w-[48%] lg:w-[32%] w-[99%] sm:mx-auto">
                    <img :src="require(`@/assets/images/port_${index}.png`)" alt="" class="rounded-md hover:opacity-50 group-hover:scale-105 transition-all w-[400px] mx-auto">
-                   <div>
-                     <h2 class="font-extrabold mt-3">{{ e.title }}</h2>
-                     <p><span>{{ e.desc[0].title }}</span><span>{{ e.desc[0].title2 }}</span></p>
-                     <p><span>{{ e.desc2[0].title }}</span><span>{{ e.desc2[0].title2 }}</span></p>
-                     <p><span>{{ e.desc3[0].title }}</span><span>{{ e.desc3[0].title2 }}</span></p>
-                     <p><span>{{ e.desc4[0].title }}</span><span>{{ e.desc4[0].title2 }}</span></p>
+                   <div class="ml-28">
+                     <h2 class="font-extrabold mt-3 text-xl mb-2">{{ e.title }}</h2>
                      <p>{{ e.tool }}</p>
+                     <p class="flex"><span class="w-[70px] block">{{ e.desc[0].title }}</span><span>:{{ e.desc[0].title2 }}</span></p>
+                     <p class="flex"><span class="w-[70px] block ">{{ e.desc2[0].title }}</span><span>:{{ e.desc2[0].title2 }}</span></p>
+                     <p class="flex"><span class="w-[70px] block ">{{ e.desc3[0].title }}</span><span>:{{ e.desc3[0].title2 }}</span></p>
+                     <p class="flex"><span class="w-[70px] block ">{{ e.desc4[0].title }}</span><span>:{{ e.desc4[0].title2 }}</span></p>
                    </div>
                    
                    <div class="flex justify-center mt-2">
                      <div class="flex bottom-0 mx-auto gap-x-3">
 
-                    <button type="button" class="text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"><a :href="e.link" target="_blank">Move Into</a></button>
+                    <button type="button" class="text-white bg-gradient-to-r from-[#ff4440] via-[#ff4440] to-[#ff4440] hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-[#ff4440] dark:focus:ring-[#ff4440] shadow-lg shadow-[#ff4440]/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 hover:scale-105 transition-all"><a :href="e.link" target="_blank">Move Into</a></button>
 
-                    <button type="button" class="text-white bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-pink-300 dark:focus:ring-pink-800 shadow-lg shadow-pink-500/50 dark:shadow-lg dark:shadow-pink-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">git Hub</button>
+                    <button type="button" class="text-white bg-gradient-to-r from-[#164562] via-[#164562] to-[#164562] hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-[#164562] dark:focus:ring-[#164562] shadow-lg shadow-[#164562]/50 dark:shadow-lg dark:shadow-[#164562]/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 hover:scale-105 transition-all">git Hub</button>
 
 
                      </div>

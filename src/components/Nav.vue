@@ -19,17 +19,10 @@
             </li>
           </ul>
         </div>
-
-        <div class="Vertical Align">
-          <div class="flex gap-x-3 mb-2">
-              <img src="git.png" alt="" class="w-10 h-10">
-              <img src="html.png" alt="" class="w-10 h-10">
-            </div>
-            <div class="flex gap-x-3">
-              <img src="css.png" alt="" class="w-10 h-10">
-              <img src="js.png" alt="" class="w-10 h-10 rounded-lg">
-          </div>
-        </div>
+        <button>
+          <img src="git.png" alt="" class="w-10 h-10 cursor-pointer" href="https://github.com/YS-SOHN/">
+        </button>
+        
         
     </div>
   </div>
