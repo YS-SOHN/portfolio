@@ -11,7 +11,7 @@
 
         <div class="basis-3/4 md:block">
           <ul class="flex mx-auto flex-basis justify-center gap-x-10 ">
-            <li v-for="(e, index) in NavList" :key="index" class="nanum text-base">
+            <li v-for="(e, index) in NavList" :key="index" class="nanum text-base transition-all hover:text-white hover:shadow-[inset_-60px_0_0_0_#ffa31b,inset_60px_0_0_0_#ffa31b] duration-1000">
               <!-- {{ langList.Nav[index] }} -->
               <button @click="$emit('MenuIndex',(index+1)+'페이지')" class="wando ml-5 font-semibold">
                 {{ e }}

@@ -37,7 +37,7 @@
                    <div class="flex justify-center mt-2">
                      <div class="flex bottom-0 mx-auto gap-x-3">
 
-                    <button type="button" class="text-white bg-gradient-to-r from-[#ff4440] via-[#ff4440] to-[#ff4440] hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-[#ff4440] dark:focus:ring-[#ff4440] shadow-lg shadow-[#ff4440]/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 hover:scale-105 transition-all"><a :href="e.link" target="_blank">Move Into</a></button>
+                    <button type="button" class="text-white bg-gradient-to-r from-[#ff4440] via-[#ff4440] to-[#ff4440] hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-[#ff4440] dark:focus:ring-[#ff4440] shadow-lg shadow-[#ff4440]/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 hover:scale-105 transition-all hover:text-white hover:shadow-[inset_-60px_0_0_0_#ffa31b,inset_60px_0_0_0_#ffa31b] duration-500"><a :href="e.link" target="_blank">Move Into</a></button>
 
                     <button type="button" class="text-white bg-gradient-to-r from-[#164562] via-[#164562] to-[#164562] hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-[#164562] dark:focus:ring-[#164562] shadow-lg shadow-[#164562]/50 dark:shadow-lg dark:shadow-[#164562]/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 hover:scale-105 transition-all">git Hub</button>
 
