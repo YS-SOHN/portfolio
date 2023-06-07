@@ -20,7 +20,9 @@
           </ul>
         </div>
         <button>
-          <img src="git.png" alt="" class="w-10 h-10 cursor-pointer" href="https://github.com/YS-SOHN/">
+          <a href="https://github.com/YS-SOHN/">
+          <img src="git.png" alt="" class="w-10 h-10 cursor-pointer" >
+          </a>
         </button>
         
         
