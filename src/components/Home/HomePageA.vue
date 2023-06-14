@@ -28,6 +28,12 @@
       </swiper-slide>
     </swiper> -->
   </div>
+
+  <div class="container">
+      <div class="field">
+          <div class="mouse"></div>
+      </div>
+  </div>
 </template>
 
 <script>
@@ -84,5 +90,27 @@ import Data from '@/assets/Data.json'
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+}
+
+.container {
+  width:100%;
+  height:100%;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+}
+
+.field {
+  display:flex;
+  align-items:center;
+  justify-content:space-around;
+  width:300px;
+}
+
+.mouse {
+  width:50px;
+  height:90px;
+  border:3px solid #333;
+  border-radius:
 }
 </style>
